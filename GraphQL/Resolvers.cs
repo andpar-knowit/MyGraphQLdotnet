@@ -4,6 +4,6 @@ public class Resolvers
 {
     public string GetFormattedDate([Parent] Book e)
     {
-        return e.PublishDate.ToshortDateString();
+        return e.PublishDate.ToShortDateString();
     }
 }
