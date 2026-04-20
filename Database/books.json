@@ -1,0 +1,20 @@
+[
+    {
+        "bookId": 17,
+        "name": "Harry Potter",
+        "pages": 267,
+        "PublishDate" : "1997-06-26"
+    },
+    {
+        "bookId": 54,
+        "name": "Memory Man",
+        "pages": 560,
+        "PublishDate" : "2015-09-15"
+    },
+    {
+        "bookId": 66,
+        "name" : "Exhalation",
+        "pages" : 368,
+        "PublishDate" : "2019-05-07"
+    }
+]
