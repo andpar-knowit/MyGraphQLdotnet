@@ -36,13 +36,19 @@
         })
       })
         .then(r => r.json())
-        .then(data => { document.getElementById("results").value = JSON.stringify(data, undefined, 4) });
+        .then(data => {
+          if (data.errors) {
+            console.error(data.errors);
+            document.getElementById("results").value = "Error! ";;
+          } else {
+            document.getElementById("results").value = JSON.stringify(data, undefined, 4)
+          }});
     }
   </script>
 </head>
 
 <body>
-  <input id="filter" placeholder="Filter..."/>
+  <input id="filter" placeholder="Filter..." />
   <input type="button" value="Run GraphQL Query" onclick="runQuery()" />
   <br />
   <textarea id="results" cols="30" rows="10"></textarea>
